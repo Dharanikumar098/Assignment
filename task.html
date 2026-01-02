@@ -26,6 +26,17 @@
 <h2>Count of CSE</h2>
 <ul id="student6"></ul>
 
+  <table id="studentTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Marks</th>
+      <th>Department</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
 <script>
 let studentslist = [
   { id: 1, name: "Kumar", marks: 95, department: "CSE" },
@@ -86,7 +97,23 @@ document.getElementById("student5").innerHTML = `<li>${maxMarks}</li>`;
 //  Count of CSE
 let countCSE = studentslist.filter(s => s.department === "CSE").length;
 document.getElementById("student6").innerHTML = `<li>${countCSE}</li>`;
+  
+  //display of students
+  let tbody = document.querySelector("#studentTable tbody");
+
+studentslist.forEach(s => {
+  let row = document.createElement("tr");
+
+  row.innerHTML = `
+    <td>${s.name}</td>
+    <td>${s.marks}</td>
+    <td>${s.department}</td>
+  `;
+
+  tbody.appendChild(row);
+});
 </script>
 
 </body>
 </html>
+
