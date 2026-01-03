@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>async await</title>
+    </head>
+    <body>
+        <h2> Space Information crew</h2>
+        <button onclick="loadStatus()"> Launch Button </button>
+        <p id="load"></p>
+        <p id="launchdetails"></p>
+        <script>
+            async function loadStatus() {
+                const load = document.getElementById("load");
+                const details = document.getElementById("launchdetails");
+
+                load.textContent="loading launch details";
+                details.textContent = " ";
+                try{ 
+                    const dharani =  await fetch("https://api.spacexdata.com/v4/launches/latest");
+                    if(!dharani.ok)
+                {
+                    throw new Error("http error :" + dharani.status);
+                }
+                const data = await dharani.json();
+                load.innerHTML="";
+                launchdetails.textContent = `${data.id}`
+                }
+                catch(error){
+                    console.log(error.message)
+                }
+            }
+        </script>
+    </body>
+</html>
