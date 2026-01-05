@@ -1,0 +1,405 @@
+emp_id	emp_namegender	departmentdesignation	salary	locationjoin_date	email
+1001	Arun	Male	IT	Developer	45000	Chennai	2022-01-10	arun@company.com
+1002	Divya	Female	HR	HR Executive	40000	Bangalore	2021-05-15	divya@company.com
+1003	Mubeen	Male	IT	Senior Developer	55000	Chennai	2023-03-20	mubeen@company.com
+1004	Ravi	Male	Finance	Accountant		Mumbai	2020-07-18	ravi@company.com
+1005	Anita	Female	Sales	Sales Executive	38000	Delhi	2022-09-12	anita@company.com
+1006	Kumar	Male	HR	Recruiter	32000	Chennai	2021-11-05	kumar@company.com
+1007	Divya	Female	IT	Tester	40000	Bangalore	2022-06-25	divya.it@company.com
+1008	Rahul	Male	IT	Developer	45000	Chennai	2020-03-14	
+1009	Sneha	Female	Finance	Analyst		Mumbai	2023-01-08	sneha@company.com
+1010	Amit	Male	Sales	Sales Manager	60000	Delhi	2019-12-01	amit@company.com
+1011	Pooja	Female	HR	HR Executive	40000	Chennai	2021-04-19	
+1012	Ramesh	Male	IT	Support Engineer	30000	Hyderabad	2022-08-10	ramesh@company.com
+1013	Suresh	Male	IT	Developer	45000	Chennai	2020-10-30	suresh@company.com
+1014	Neha	Female	Sales	Sales Executive	38000	Delhi	2023-02-14	neha@company.com
+1015	Arun	Male	IT	Developer	45000	Chennai	2021-09-09	arun.it@company.com
+1016	Kiran	Male	Finance	Accountant		Mumbai	2022-12-21	kiran@company.com
+1017	Meena	Female	HR	Recruiter	32000	Bangalore	2020-06-11	meena@company.com
+1018	Vijay	Male	IT	Tester	35000	Hyderabad	2023-04-01	
+1019	Anita	Female	Sales	Sales Executive	38000	Delhi	2021-07-07	anita.sales@company.com
+1020	Rohit	Male	IT	Developer	45000	Chennai	2022-11-18	rohit@company.com
+1021	Sanjay	Male	IT	Developer		Chennai	2020-02-02	
+
+
+
+emp_id	emp_namedepartment
+1001	Arun	IT
+1002	Divya	HR
+1003	Mubeen	IT
+1004	Ravi	Finance
+1005	Anita	Sales
+1006	Kumar	HR
+1007	Divya	IT
+1008	Rahul	IT
+1009	Sneha	Finance
+1010	Amit	Sales
+1011	Pooja	HR
+1012	Ramesh	IT
+1013	Suresh	IT
+1014	Neha	Sales
+1015	Arun	IT
+1016	Kiran	Finance
+1017	Meena	HR
+1018	Vijay	IT
+1019	Anita	Sales
+1020	Rohit	IT
+1021	Sanjay	IT
+
+
+emp_namesalary
+Arun	45000
+Divya	40000
+Mubeen	55000
+Ravi	
+Anita	38000
+Kumar	32000
+Divya	40000
+Rahul	45000
+Sneha	
+Amit	60000
+Pooja	40000
+Ramesh	30000
+Suresh	45000
+Neha	38000
+Arun	45000
+Kiran	
+Meena	32000
+Vijay	35000
+Anita	38000
+Rohit	45000
+Sanjay	
+
+emp_id	emp_name salary
+1001	Arun	45000
+1003	Mubeen	55000
+1008	Rahul	45000
+1010	Amit	60000
+1013	Suresh	45000
+1015	Arun	45000
+1020	Rohit	45000
+
+emp_id	emp_name salary
+1006	Kumar	32000
+1012	Ramesh	30000
+1017	Meena	32000
+1018	Vijay	35000
+
+
+
+emp_id	emp_name salary
+1001	Arun	45000
+1008	Rahul	45000
+1013	Suresh	45000
+1015	Arun	45000
+1020	Rohit	45000
+
+
+emp_id	emp_name	gender	department	designation	salary	location	join_date	email
+1001	Arun	Male	IT	Developer	45000	Chennai	2022-01-10	arun@company.com
+1003	Mubeen	Male	IT	Senior Developer	55000	Chennai	2023-03-20	mubeen@company.com
+1005	Anita	Female	Sales	Sales Executive	38000	Delhi	2022-09-12	anita@company.com
+1007	Divya	Female	IT	Tester	40000	Bangalore	2022-06-25	divya.it@company.com
+1009	Sneha	Female	Finance	Analyst		Mumbai	2023-01-08	sneha@company.com
+1012	Ramesh	Male	IT	Support Engineer	30000	Hyderabad	2022-08-10	ramesh@company.com
+1014	Neha	Female	Sales	Sales Executive	38000	Delhi	2023-02-14	neha@company.com
+1016	Kiran	Male	Finance	Accountant		Mumbai	2022-12-21	kiran@company.com
+1018	Vijay	Male	IT	Tester	35000	Hyderabad	2023-04-01	
+1020	Rohit	Male	IT	Developer	45000	Chennai	2022-11-18	rohit@company.com
+
+
+emp_id	emp_name	gender	department	designation	salary	location	join_date	email
+1004	Ravi	Male	Finance	Accountant		Mumbai	2020-07-18	ravi@company.com
+1008	Rahul	Male	IT	Developer	45000	Chennai	2020-03-14	
+1010	Amit	Male	Sales	Sales Manager	60000	Delhi	2019-12-01	amit@company.com
+1013	Suresh	Male	IT	Developer	45000	Chennai	2020-10-30	suresh@company.com
+1017	Meena	Female	HR	Recruiter	32000	Bangalore	2020-06-11	meena@company.com
+1021	Sanjay	Male	IT	Developer		Chennai	2020-02-02	
+
+
+emp_id	emp_name salary
+1001	Arun	45000
+1002	Divya	40000
+1005	Anita	38000
+1007	Divya	40000
+1008	Rahul	45000
+1011	Pooja	40000
+1013	Suresh	45000
+1014	Neha	38000
+1015	Arun	45000
+1018	Vijay	35000
+1019	Anita	38000
+1020	Rohit	45000
+
+emp_id	emp_name join_date
+1001	Arun	2022-01-10
+1002	Divya	2021-05-15
+1005	Anita	2022-09-12
+1006	Kumar	2021-11-05
+1007	Divya	2022-06-25
+1011	Pooja	2021-04-19
+1012	Ramesh	2022-08-10
+1015	Arun	2021-09-09
+1016	Kiran	2022-12-21
+1019	Anita	2021-07-07
+1020	Rohit	2022-11-18
+
+emp_id	emp_name department
+1001	Arun	IT
+1002	Divya	HR
+1003	Mubeen	IT
+1006	Kumar	HR
+1007	Divya	IT
+1008	Rahul	IT
+1011	Pooja	HR
+1012	Ramesh	IT
+1013	Suresh	IT
+1015	Arun	IT
+1017	Meena	HR
+1018	Vijay	IT
+1020	Rohit	IT
+1021	Sanjay	IT
+
+
+emp_id	emp_name location
+1001	Arun	Chennai
+1002	Divya	Bangalore
+1003	Mubeen	Chennai
+1006	Kumar	Chennai
+1007	Divya	Bangalore
+1008	Rahul	Chennai
+1011	Pooja	Chennai
+1012	Ramesh	Hyderabad
+1013	Suresh	Chennai
+1015	Arun	Chennai
+1017	Meena	Bangalore
+1018	Vijay	Hyderabad
+1020	Rohit	Chennai
+1021	Sanjay	Chennai
+
+
+emp_id	emp_name salary
+1002	Divya	40000
+1005	Anita	38000
+1006	Kumar	32000
+1007	Divya	40000
+1011	Pooja	40000
+1014	Neha	38000
+1017	Meena	32000
+1019	Anita	38000
+
+
+emp_id	emp_name location
+1001	Arun	Chennai
+1002	Divya	Bangalore
+1003	Mubeen	Chennai
+1005	Anita	Delhi
+1006	Kumar	Chennai
+1007	Divya	Bangalore
+1008	Rahul	Chennai
+1010	Amit	Delhi
+1011	Pooja	Chennai
+1012	Ramesh	Hyderabad
+1013	Suresh	Chennai
+1014	Neha	Delhi
+1015	Arun	Chennai
+1017	Meena	Bangalore
+1018	Vijay	Hyderabad
+1019	Anita	Delhi
+1020	Rohit	Chennai
+1021	Sanjay	Chennai
+
+emp_id	emp_name department
+1004	Ravi	Finance
+1005	Anita	Sales
+1009	Sneha	Finance
+1010	Amit	Sales
+1014	Neha	Sales
+1016	Kiran	Finance
+1019	Anita	Sales
+
+emp_id	emp_name designation
+1002	Divya	HR Executive
+1003	Mubeen	Senior Developer
+1004	Ravi	Accountant
+1005	Anita	Sales Executive
+1006	Kumar	Recruiter
+1009	Sneha	Analyst
+1010	Amit	Sales Manager
+1011	Pooja	HR Executive
+1012	Ramesh	Support Engineer
+1014	Neha	Sales Executive
+1016	Kiran	Accountant
+1017	Meena	Recruiter
+1019	Anita	Sales Executive
+
+
+emp_id	emp_name
+1001	Arun
+1005	Anita
+1010	Amit
+1015	Arun
+1019	Anita
+
+emp_id	emp_name	salary
+1004	Ravi	
+1009	Sneha	
+1016	Kiran	
+1021	Sanjay	
+
+
+emp_id	emp_name	email
+1008	Rahul	
+1011	Pooja	
+1018	Vijay	
+1021	Sanjay	
+
+emp_id	emp_name	email
+1001	Arun	arun@company.com
+1002	Divya	divya@company.com
+1003	Mubeen	mubeen@company.com
+1004	Ravi	ravi@company.com
+1005	Anita	anita@company.com
+1006	Kumar	kumar@company.com
+1007	Divya	divya.it@company.com
+1009	Sneha	sneha@company.com
+1010	Amit	amit@company.com
+1012	Ramesh	ramesh@company.com
+1013	Suresh	suresh@company.com
+1014	Neha	neha@company.com
+1015	Arun	arun.it@company.com
+1016	Kiran	kiran@company.com
+1017	Meena	meena@company.com
+1019	Anita	anita.sales@company.com
+1020	Rohit	rohit@company.com
+
+
+emp_id	emp_name salary
+1001	Arun	45000
+1002	Divya	40000
+1003	Mubeen	55000
+1005	Anita	38000
+1006	Kumar	32000
+1007	Divya	40000
+1008	Rahul	45000
+1010	Amit	60000
+1011	Pooja	40000
+1012	Ramesh	30000
+1013	Suresh	45000
+1014	Neha	38000
+1015	Arun	45000
+1017	Meena	32000
+1018	Vijay	35000
+1019	Anita	38000
+1020	Rohit	45000
+
+
+emp_id	emp_name
+1004	Ravi
+
+emp_id	emp_name
+1004	Ravi
+1018	Vijay
+
+emp_id	emp_name	email
+1001	Arun	arun@company.com
+1002	Divya	divya@company.com
+1003	Mubeen	mubeen@company.com
+1004	Ravi	ravi@company.com
+1005	Anita	anita@company.com
+1006	Kumar	kumar@company.com
+1007	Divya	divya.it@company.com
+1009	Sneha	sneha@company.com
+1010	Amit	amit@company.com
+1012	Ramesh	ramesh@company.com
+1013	Suresh	suresh@company.com
+1014	Neha	neha@company.com
+1015	Arun	arun.it@company.com
+1016	Kiran	kiran@company.com
+1017	Meena	meena@company.com
+1019	Anita	anita.sales@company.com
+1020	Rohit	rohit@company.com
+
+emp_id	emp_name	designation
+1012	Ramesh	Support Engineer
+
+
+emp_id	emp_name	salary
+1004	Ravi	
+1009	Sneha	
+1016	Kiran	
+1021	Sanjay	
+1012	Ramesh	30000
+1006	Kumar	32000
+1017	Meena	32000
+1018	Vijay	35000
+1005	Anita	38000
+1014	Neha	38000
+1019	Anita	38000
+1002	Divya	40000
+1007	Divya	40000
+1011	Pooja	40000
+1001	Arun	45000
+1008	Rahul	45000
+1013	Suresh	45000
+1015	Arun	45000
+1020	Rohit	45000
+1003	Mubeen	55000
+1010	Amit	60000
+
+
+emp_id	emp_name	salary	designation
+1010	Amit	60000	Sales Manager
+1003	Mubeen	55000	Senior Developer
+1001	Arun	45000	Developer
+1008	Rahul	45000	Developer
+1013	Suresh	45000	Developer
+1015	Arun	45000	Developer
+1020	Rohit	45000	Developer
+1002	Divya	40000	HR Executive
+1011	Pooja	40000	HR Executive
+1007	Divya	40000	Tester
+1005	Anita	38000	Sales Executive
+1014	Neha	38000	Sales Executive
+1019	Anita	38000	Sales Executive
+1018	Vijay	35000	Tester
+1006	Kumar	32000	Recruiter
+1017	Meena	32000	Recruiter
+1012	Ramesh	30000	Support Engineer
+1004	Ravi		Accountant
+1016	Kiran		Accountant
+1009	Sneha		Analyst
+1021	Sanjay		Developer
+
+
+emp_id	emp_name	salary	department
+1003	Mubeen	55000	IT
+
+emp_id	emp_name	salary	department
+1001	Arun	45000	IT
+1003	Mubeen	55000	IT
+1005	Anita	38000	Sales
+1007	Divya	40000	IT
+1008	Rahul	45000	IT
+1010	Amit	60000	Sales
+1012	Ramesh	30000	IT
+1013	Suresh	45000	IT
+1014	Neha	38000	Sales
+1015	Arun	45000	IT
+1018	Vijay	35000	IT
+1019	Anita	38000	Sales
+1020	Rohit	45000	IT
+1021	Sanjay		IT
+
+
+
+
+
+
+
+
+
+
+
+
+
