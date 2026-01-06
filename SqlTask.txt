@@ -1,3 +1,6 @@
+ 
+1.Display all employee records.
+select * from employees;
 emp_id	emp_namegender	departmentdesignation	salary	locationjoin_date	email
 1001	Arun	Male	IT	Developer	45000	Chennai	2022-01-10	arun@company.com
 1002	Divya	Female	HR	HR Executive	40000	Bangalore	2021-05-15	divya@company.com
@@ -22,6 +25,9 @@ emp_id	emp_namegender	departmentdesignation	salary	locationjoin_date	email
 1021	Sanjay	Male	IT	Developer		Chennai	2020-02-02	
 
 
+2.Display only employee ID, name, and department.
+SELECT emp_id, emp_name, department
+FROM employees; 
 
 emp_id	emp_namedepartment
 1001	Arun	IT
@@ -46,6 +52,8 @@ emp_id	emp_namedepartment
 1020	Rohit	IT
 1021	Sanjay	IT
 
+3.Display employee name and salary for all employees.
+SELECT emp_name, salary FROM employees;
 
 emp_namesalary
 Arun	45000
@@ -70,6 +78,9 @@ Anita	38000
 Rohit	45000
 Sanjay	
 
+4.Display employees whose salary is greater than 40,000.
+SELECT * FROM employees WHERE salary > 40000;
+
 emp_id	emp_name salary
 1001	Arun	45000
 1003	Mubeen	55000
@@ -79,6 +90,10 @@ emp_id	emp_name salary
 1015	Arun	45000
 1020	Rohit	45000
 
+
+5.Display employees whose salary is less than or equal to 35,000.
+SELECT * FROM employees WHERE salary <= 35000;
+
 emp_id	emp_name salary
 1006	Kumar	32000
 1012	Ramesh	30000
@@ -86,7 +101,8 @@ emp_id	emp_name salary
 1018	Vijay	35000
 
 
-
+6.Display employees whose salary is exactly 45,000.
+SELECT * FROM employees WHERE salary = 45000;
 emp_id	emp_name salary
 1001	Arun	45000
 1008	Rahul	45000
@@ -94,6 +110,9 @@ emp_id	emp_name salary
 1015	Arun	45000
 1020	Rohit	45000
 
+
+7.Display employees who joined after 01-Jan-2022.
+SELECT * FROM employees WHERE joining_date > DATE '2022-01-01';
 
 emp_id	emp_name	gender	department	designation	salary	location	join_date	email
 1001	Arun	Male	IT	Developer	45000	Chennai	2022-01-10	arun@company.com
@@ -107,6 +126,9 @@ emp_id	emp_name	gender	department	designation	salary	location	join_date	email
 1018	Vijay	Male	IT	Tester	35000	Hyderabad	2023-04-01	
 1020	Rohit	Male	IT	Developer	45000	Chennai	2022-11-18	rohit@company.com
 
+8.Display employees who joined before 01-Jan-2021.
+SELECT * FROM employees WHERE joining_date < DATE '2021-01-01';
+
 
 emp_id	emp_name	gender	department	designation	salary	location	join_date	email
 1004	Ravi	Male	Finance	Accountant		Mumbai	2020-07-18	ravi@company.com
@@ -116,7 +138,8 @@ emp_id	emp_name	gender	department	designation	salary	location	join_date	email
 1017	Meena	Female	HR	Recruiter	32000	Bangalore	2020-06-11	meena@company.com
 1021	Sanjay	Male	IT	Developer		Chennai	2020-02-02	
 
-
+9.Display employees whose salary is between 35,000 and 50,000.
+SELECT * FROM employees WHERE salary BETWEEN 35000 AND 50000;
 emp_id	emp_name salary
 1001	Arun	45000
 1002	Divya	40000
@@ -131,6 +154,10 @@ emp_id	emp_name salary
 1019	Anita	38000
 1020	Rohit	45000
 
+10.Display employees whose joining date is between 01-Jan-2021 and 31-Dec-2022.
+SELECT * FROM employees
+WHERE joining_date BETWEEN DATE '2021-01-01' AND DATE '2022-12-31';
+
 emp_id	emp_name join_date
 1001	Arun	2022-01-10
 1002	Divya	2021-05-15
@@ -143,6 +170,10 @@ emp_id	emp_name join_date
 1016	Kiran	2022-12-21
 1019	Anita	2021-07-07
 1020	Rohit	2022-11-18
+
+12.Display employees working in IT or HR departments.
+SELECT * FROM employees WHERE department IN ('IT','HR');
+
 
 emp_id	emp_name department
 1001	Arun	IT
@@ -160,7 +191,8 @@ emp_id	emp_name department
 1020	Rohit	IT
 1021	Sanjay	IT
 
-
+13.Display employees working in Chennai, Bangalore, or Hyderabad.
+SELECT * FROM employees WHERE location IN ('Chennai','Bangalore','Hyderabad');
 emp_id	emp_name location
 1001	Arun	Chennai
 1002	Divya	Bangalore
@@ -177,6 +209,9 @@ emp_id	emp_name location
 1020	Rohit	Chennai
 1021	Sanjay	Chennai
 
+14.Display employees whose salary is IN (32000, 38000, 40000).
+SELECT * FROM employees WHERE salary IN (32000,38000,40000);
+
 
 emp_id	emp_name salary
 1002	Divya	40000
@@ -188,7 +223,8 @@ emp_id	emp_name salary
 1017	Meena	32000
 1019	Anita	38000
 
-
+15.Display employees not working in Mumbai.
+SELECT * FROM employees WHERE location != 'Mumbai';
 emp_id	emp_name location
 1001	Arun	Chennai
 1002	Divya	Bangalore
@@ -209,6 +245,8 @@ emp_id	emp_name location
 1020	Rohit	Chennai
 1021	Sanjay	Chennai
 
+16.Display employees whose department is not in IT and HR.
+SELECT * FROM employees WHERE department NOT IN ('IT','HR');
 emp_id	emp_name department
 1004	Ravi	Finance
 1005	Anita	Sales
@@ -218,6 +256,8 @@ emp_id	emp_name department
 1016	Kiran	Finance
 1019	Anita	Sales
 
+17.Display employees whose designation is not in Developer and Tester.
+SELECT * FROM employees WHERE designation NOT IN ('Developer','Tester');
 emp_id	emp_name designation
 1002	Divya	HR Executive
 1003	Mubeen	Senior Developer
@@ -233,6 +273,8 @@ emp_id	emp_name designation
 1017	Meena	Recruiter
 1019	Anita	Sales Executive
 
+18.Display employees whose name starts with ‘A’.
+SELECT * FROM employees WHERE emp_name LIKE 'A%';
 
 emp_id	emp_name
 1001	Arun
@@ -241,11 +283,17 @@ emp_id	emp_name
 1015	Arun
 1019	Anita
 
+19.Display employees whose salary is NULL.
+SELECT * FROM employees WHERE salary IS NULL;
+
 emp_id	emp_name	salary
 1004	Ravi	
 1009	Sneha	
 1016	Kiran	
 1021	Sanjay	
+
+20.Display employees whose email is NULL.
+SELECT * FROM employees WHERE email IS NULL;
 
 
 emp_id	emp_name	email
@@ -253,6 +301,12 @@ emp_id	emp_name	email
 1011	Pooja	
 1018	Vijay	
 1021	Sanjay	
+
+
+22.Display employees whose email is NOT NULL.
+SELECT * FROM employees WHERE email IS NOT NULL;
+
+
 
 emp_id	emp_name	email
 1001	Arun	arun@company.com
@@ -272,6 +326,9 @@ emp_id	emp_name	email
 1017	Meena	meena@company.com
 1019	Anita	anita.sales@company.com
 1020	Rohit	rohit@company.com
+
+21.Display employees whose salary is NOT NULL.
+SELECT * FROM employees WHERE salary IS NOT NULL;
 
 
 emp_id	emp_name salary
@@ -293,13 +350,22 @@ emp_id	emp_name salary
 1019	Anita	38000
 1020	Rohit	45000
 
+23.Display employees whose name ends with ‘i’.
+SELECT * FROM employees WHERE emp_name LIKE '%i';
+
 
 emp_id	emp_name
 1004	Ravi
 
+24.Display employees whose name contains ‘vi’.
+SELECT * FROM employees WHERE emp_name LIKE '%vi%';
 emp_id	emp_name
 1004	Ravi
 1018	Vijay
+
+
+25.Display employees whose email contains ‘@company.com’.
+SELECT * FROM employees WHERE email LIKE '%@company.com';
 
 emp_id	emp_name	email
 1001	Arun	arun@company.com
@@ -320,8 +386,18 @@ emp_id	emp_name	email
 1019	Anita	anita.sales@company.com
 1020	Rohit	rohit@company.com
 
+
+26.Display employees whose designation ends with ‘Engineer’.
+SELECT * FROM employees WHERE designation LIKE '%Engineer';
+
+
 emp_id	emp_name	designation
 1012	Ramesh	Support Engineer
+
+
+
+27.Display all employees ordered by salary ascending.
+SELECT * FROM employees ORDER BY salary ASC;
 
 
 emp_id	emp_name	salary
@@ -346,6 +422,9 @@ emp_id	emp_name	salary
 1020	Rohit	45000
 1003	Mubeen	55000
 1010	Amit	60000
+
+28.Display employees ordered by department ASC and salary DESC.
+SELECT * FROM employees ORDER BY department ASC, salary DESC;
 
 
 emp_id	emp_name	salary	designation
@@ -371,9 +450,18 @@ emp_id	emp_name	salary	designation
 1009	Sneha		Analyst
 1021	Sanjay		Developer
 
+30.Display employees working in IT department AND salary > 45,000.
+SELECT * FROM employees
+WHERE department = 'IT' AND salary > 45000;
+
 
 emp_id	emp_name	salary	department
 1003	Mubeen	55000	IT
+
+
+31.Display employees working in HR OR Sales department.
+SELECT * FROM employees
+WHERE department IN ('IT','Sales');
 
 emp_id	emp_name	salary	department
 1001	Arun	45000	IT
